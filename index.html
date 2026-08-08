@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andalus Restaurant</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Casa Sevilla Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <!-- HERO -->
 <header class="hero">
     <div class="container">
-        <h1>Andalus Restaurant</h1>
-        <p>Authentic Moroccan cuisine. Fresh. Traditional. Served with care.</p>
+        <h1>Casa Sevilla</h1>
+        <p>Authentic Spanish cuisine. Fresh ingredients. Timeless flavors. Served with passion.</p>
 
         <div class="hero-actions">
             <a href="https://wa.me/212600000000" class="btn-primary">Book via WhatsApp</a>
@@ -31,14 +36,14 @@
             <div class="card">
                 <div class="card-content">
                     <h3>Fresh Ingredients</h3>
-                    <p>Daily prepared Moroccan dishes.</p>
+                    <p>Prepared daily with locally sourced Spanish ingredients.</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-content">
                     <h3>Authentic Taste</h3>
-                    <p>Traditional recipes from Moroccan cuisine.</p>
+                    <p>Traditional Spanish recipes crafted with authentic flavors.</p>
                 </div>
             </div>
 
@@ -56,39 +61,41 @@
 <!-- MENU -->
 <section class="section" id="menu">
     <div class="container">
-        <h2 class="section-title">Popular Dishes</h2>
+        <h2 class="section-title">Signature Dishes</h2>
 
         <div class="grid">
 
             <div class="card">
-                <img src="tagine.jpeg" alt="Tagine">
+                <img src="assets/products/paella.png" alt="Paella Valenciana">
                 <div class="card-content">
-                    <h3>Tagine</h3>
+                    <h3>Paella Valenciana</h3>
                 </div>
             </div>
 
             <div class="card">
-                <img src="couscous.jpeg" alt="Couscous">
+                <img src="assets/products/patatas-bravas.png" alt="Patatas Bravas">
                 <div class="card-content">
-                    <h3>Couscous</h3>
+                    <h3>Patatas Bravas</h3>
                 </div>
             </div>
 
             <div class="card">
-                <img src="harira.jpeg" alt="Harira">
+                <img src="assets/products/tortilla-espanola.png" alt="Spanish Omelette">
                 <div class="card-content">
-                    <h3>Harira</h3>
+                    <h3>Tortilla Española</h3>
                 </div>
             </div>
 
-	    <div class="card">
-		    <img src="shebbakia.jpeg" alt="Shebbakia">
-		    <div class="card-content">
+            <div class="card">
+                <img src="assets/products/churros.png" alt="Churros">
+                <div class="card-content">
+                    <h3>Churros</h3>
+                </div>
+            </div>
 
         </div>
     </div>
 </section>
-
 <!-- CTA -->
 <section class="cta">
     <div class="container">
@@ -107,27 +114,33 @@
         <h2 class="section-title">Find Us</h2>
 
         <p style="text-align:center;">
-            📍 Casablanca, Morocco (replace with real location)
+            📍 Seville, Spain 
         </p>
 
-        <div style="text-align:center; margin-top:20px;">
-            <a href="https://maps.google.com" class="btn-secondary" target="_blank">
-                Open in Google Maps
-            </a>
-        </div>
+	<div class=map>
+		<iframe 
+	     		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101459.41911351729!2d-6.037460386975608!3d37.37547858836562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c1114be6291%3A0x34f018621cfe5648!2sSeville%2C%20Spain!5e0!3m2!1sen!2sus!4v1786126115423!5m2!1sen!2sus"
+			width="600"
+			height="450"
+			style="border:0;"
+			allowfullscreen=""
+			loading="lazy" 
+			referrerpolicy="strict-origin-when-cross-origin">
+		</iframe>
+	</div>
     </div>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
     <div class="container">
-        <p>&copy; 2026 Andalus Restaurant | All Rights Reserved</p>
+        <p>&copy; 2026 Casa Sevilla Restaurant | All Rights Reserved</p>
     </div>
 </footer>
 
 <!-- FLOATING WHATSAPP -->
 <a class="whatsapp-float" href="https://wa.me/212600000000" target="_blank">
-    💬
+	<img class="whatsapp-icon" src="assets/icons/whatsapp-icon.svg" alt="whatsapp">
 </a>
 
 </body>
