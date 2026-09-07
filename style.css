@@ -1,7 +1,7 @@
 :root {
 	/* Typography */
-	--font-heading: "Playfair Display", serif;
-	--font-body: "Montserrat", sans-serif;
+	--font-family-heading: "Playfair Display", serif;
+	--font-family-body: "Montserrat", sans-serif;
 
 	/* Color identity */
 	--warm-ivory: #F7F3EA;
@@ -22,7 +22,7 @@
 	--color-muted-text: var(--warm-gray);
 
 	/* Layout */
-	--container-width: 1100px;
+	--container-max-width: 1100px;
 	--section-padding: clamp(4rem, 8vw, 6rem);
 	--content-radius: 16px;
 
@@ -32,7 +32,7 @@
 }
 
 /* =========================
-   RESET
+   Reset
 ========================= */
 * {
 	margin: 0;
@@ -47,7 +47,7 @@ html {
 body {
 	color: var(--color-main-text);
 	background-color: var(--color-main-background);
-	font-family: var(--font-body);
+	font-family: var(--font-family-body);
 	line-height: 1.6;
 }
 
@@ -60,19 +60,20 @@ a {
 }
 
 /* =========================
-   TYPOGRAPHY
+   Typography
 ========================= */
 h1,
 h2,
 h3,
 h4 {
-	font-family: var(--font-heading);
+	font-family: var(--font-family-heading);
 	font-weight: 600;
 	line-height: 1.15;
+    text-align: center;
 }
 
 p {
-	font-family: var(--font-body);
+	font-family: var(--font-family-body);
 }
 
 .hero h1 {
@@ -88,16 +89,79 @@ p {
 }
 
 /* =========================
-   CONTAINER
+   Container
 ========================= */
 .container {
 	width: 90%;
-	max-width: var(--container-width);
+	max-width: var(--container-max-width);
 	margin-inline: auto;
 }
 
 /* =========================
-   HERO
+   Demo Banner
+========================= */
+.demo-banner {
+    color: var(--color-main-background);
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 0;
+    background: var(--deep-charcoal);
+}
+
+.demo-banner strong {
+    color: var(--);
+}
+
+/* =========================
+Case Study
+============================*/
+.case-study {
+	background: var(--secondary-background);
+	border-top: 1px solid var(--borders);
+}
+
+.case-study p {
+	max-width: 700px;
+	margin: 0 auto 15px;
+	text-align: center;
+	color: var(--main-text);
+}
+
+.case-study strong {
+	color: var(--main-text);
+}
+
+.case-study a {
+	color: var(--accent-text);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.case-study a:hover {
+	text-decoration: underline;
+}
+
+.secondary-link {
+font-weight: 400;
+font-size: 13px;
+text-decoration: underline;
+text-underline-offset: 3px;
+opacity: 1;
+transition: 0.3s;
+}
+
+.secondary-link:hover {
+color: var(--accent-text);
+opacity: 1;
+}
+
+.cta-or {
+font-size: 13px;
+color: var(--main-text);
+}
+
+/* =========================
+   Hero
 ========================= */
 .hero {
 	background:
@@ -124,7 +188,7 @@ p {
 }
 
 /* =========================
-   HERO BUTTONS
+   Hero Buttons
 ========================= */
 .hero-actions {
 	display: flex;
@@ -134,7 +198,7 @@ p {
 }
 
 /* =========================
-   BUTTONS
+   Buttons
 ========================= */
 .btn-primary,
 .btn-secondary,
@@ -150,7 +214,7 @@ p {
 		background-color var(--transition-fast),
 		color var(--transition-fast),
 		border-color var(--transition-fast);
-	font-family: var(--font-body);
+	font-family: var(--font-family-body);
 	font-weight: 600;
 	cursor: pointer;
 }
@@ -199,12 +263,12 @@ p {
 /* =========================
    SECTION BASE
 ========================= */
-.section {
+section {
 	padding-block: var(--section-padding);
 }
 
 /* =========================
-   TITLE
+   Title
 ========================= */
 .section-title {
 	text-align: center;
@@ -213,7 +277,7 @@ p {
 }
 
 /* =========================
-   GRID
+   Grid
 ========================= */
 .grid {
 	display: grid;
@@ -222,7 +286,7 @@ p {
 }
 
 /* =========================
-   CARD
+   Card
 ========================= */
 .card {
 	background: var(--soft-cream);
@@ -262,7 +326,7 @@ p {
 }
 
 /* =========================
-   CTA SECTION
+   CTA Section
 ========================= */
 .cta {
 	background:
@@ -293,8 +357,12 @@ p {
 }
 
 /* =========================
-   MAP
+   Map
 ========================= */
+#location p {
+    margin-block-end: 1rem;
+}
+
 .section .container div.map {
 	display: flex;
 	justify-content: center;
@@ -312,7 +380,7 @@ p {
 }
 
 /* =========================
-   FOOTER
+   Footer
 ========================= */
 .footer {
 	text-align: center;
@@ -327,7 +395,7 @@ p {
 }
 
 /* =========================
-   WHATSAPP FLOAT
+   Whatsapp Float
 ========================= */
 .whatsapp-float {
 	position: fixed;
@@ -353,7 +421,7 @@ p {
 }
 
 /* =========================
-   ACCESSIBILITY / INTERACTION
+   Accessibility / Interaction
 ========================= */
 :focus-visible {
 	outline: 3px solid var(--warm-gold);
@@ -373,7 +441,7 @@ p {
 }
 
 /* =========================
-   RESPONSIVE
+   Responsive
 ========================= */
 @media (max-width: 900px) {
 	.grid {
