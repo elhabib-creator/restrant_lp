@@ -108,8 +108,20 @@ p {
     background: var(--deep-charcoal);
 }
 
+.demo-banner a {
+    text-decoration-line: none;
+    color: var(--color-secondary-accent);
+    font-weight: bold;
+    display: inline-block;
+}
+
+.demo-banner a:hover {
+    color: var(--color-highlight);
+    transform: scale(1.02);
+}
+
 .demo-banner strong {
-    color: var(--);
+    color: var(--color-secondary-accent);
 }
 
 /* =========================
@@ -128,36 +140,37 @@ Case Study
 }
 
 .case-study strong {
-	color: var(--main-text);
+	color: var(--color-secondary-accent);
 }
 
 .case-study a {
-	color: var(--accent-text);
+	color: var(--color-secondary-accent);
 	font-weight: 600;
 	text-decoration: none;
 }
 
 .case-study a:hover {
-	text-decoration: underline;
+	color: var(--color-highlight);
+    text-decoration: underline;
 }
 
 .secondary-link {
-font-weight: 400;
-font-size: 13px;
-text-decoration: underline;
-text-underline-offset: 3px;
-opacity: 1;
-transition: 0.3s;
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .secondary-link:hover {
-color: var(--accent-text);
-opacity: 1;
+    color: var(--accent-text);
+    opacity: 1;
 }
 
 .cta-or {
-font-size: 13px;
-color: var(--main-text);
+    font-size: 13px;
+    color: var(--main-text);
 }
 
 /* =========================
@@ -261,7 +274,7 @@ color: var(--main-text);
 }
 
 /* =========================
-   SECTION BASE
+   Section Base
 ========================= */
 section {
 	padding-block: var(--section-padding);
@@ -390,7 +403,7 @@ section {
 	font-size: 0.95rem;
 }
 
-.footer a {
+.footer p {
 	color: var(--warm-ivory);
 }
 
@@ -418,6 +431,11 @@ section {
 
 .whatsapp-float:hover {
 	transform: scale(1.12);
+}
+
+.whatsapp-icon {
+    height: 38px;
+    width: 38px;
 }
 
 /* =========================
