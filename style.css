@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/fonts/playfair-display/PlayfairDisplay-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/fonts/playfair-display/PlayfairDisplay-Italic-VariableFont_wght.woff2") format("woff2");
+    font-weight: 400 900;
+    font-style: italic;
+    font-display: swap;
+} 
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/montserrat/Montserrat-VariableFont_wght.woff2") format("woff2");
+    font-weight:400 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/fonts/montserrat/Montserrat-Italic-VariableFont_wght.woff2") format("woff2");
+    font-weight: 400 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* =========================
+Root Variabes
+========================= */
 :root {
 	/* Typography */
 	--font-family-heading: "Playfair Display", serif;
@@ -12,7 +47,7 @@
 	--soft-cream: #EDE6D8;
 	--warm-gray: #716B62;
 
-	/* Semantic colors */
+	/* Semantic Colors */
 	--color-main-background: var(--warm-ivory);
 	--color-main-text: var(--deep-charcoal);
 	--color-primary-brand: var(--deep-olive);
